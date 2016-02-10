@@ -5,8 +5,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
     <script src="js/mainApp.js"></script>
 </head>
-<body ng-controller="MainPageController">
-    <p>О,прівєт {{MainPageController.a}}</p>
-
+<body ng-controller="MainPageController as main">
+    <p>О,прівєт {{main.a}}+{{main.b}} == {{main.result}}</p>
+    <input type="text" name="a" ng-model="main.a" id="a" />
+    <input type="text" name="b" ng-model="main.b" id="b" />
+    <button type="submit" type="submit" ng-click="main.submit()"> Submit </button>
 </body>
 </html>

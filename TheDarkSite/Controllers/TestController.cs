@@ -16,6 +16,10 @@ namespace TheDarkSite.Controllers
                 Smthn = "69!"
             };
         }
+        public int Get(int a,int b)
+        {
+            return a + b;
+        }
     }
 
     public class TestClass
