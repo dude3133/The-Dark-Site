@@ -1,9 +1,12 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html ng-app="mainApp">
 <head>
     <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="js/mainApp.js"></script>
 </head>
-<body>
-<p>О,прівєт</p>
+<body ng-controller="MainPageController">
+    <p>О,прівєт {{MainPageController.a}}</p>
+
 </body>
 </html>
